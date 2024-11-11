@@ -1,0 +1,98 @@
+@font-face {
+    font-family: RockFont;
+    src: url("Funkrocker.otf");
+  }
+  
+h4 {
+    font-family: RockFont;
+  }
+
+.masthead {
+    background: rgb(230, 221, 221);
+    height: 5em;
+  }
+  
+.centeredText {
+    text-align: center;
+  }
+  
+.site-title {
+    color: white;
+    font-family: RockFont;
+    font-size: 80px;
+    font-weight: bolder;
+  }
+.main-area {
+    border: 3px solid black;
+    background-color: white;
+    
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    background: white;
+    margin-bottom: 1em;
+    border: 2px solid black;
+    flex: 0 0 0;
+    height: 900px;
+}
+.card:hover {
+    box-shadow: 5px 5px 8px rgb(230, 221, 221);
+}
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-content {
+    padding: 1.4em;
+}
+.card-content h2 {
+    color: black;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: normal;
+    font-family: RockFont;
+}
+.card-content p {
+    color: black;
+    font-size: 95%;
+    font-weight: bolder;
+}
+.picHolder {
+    padding-top: 1.4em;
+    text-align: center;
+}
+.card img{
+    width: 100px;
+    height: 150px;
+    border: 3px solid purple;
+}
+
+@media screen and (min-width: 900px) {
+    
+    .card img{
+        width: 100px;
+        height: 150px;
+        border: 3px solid gray;
+        border-radius: 20px;
+    }
+    .card {
+        background: white;
+        margin-bottom: 2em;
+        border: 2px solid black;
+        flex: 0 1 calc(17% - 1em);
+        height: 800px;
+    }
+}
+@media screen and (max-width: 460px) {
+    
+    .card {
+        background: white;
+        margin-bottom: 2em;
+        border: 2px solid black;
+        flex: 0 1 calc(80% - 1em);
+        height: 800px;
+    }
+}
